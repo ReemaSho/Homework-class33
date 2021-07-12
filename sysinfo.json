@@ -1,0 +1,60 @@
+{
+  "node": "v14.17.2",
+  "system": {
+    "manufacturer": "Apple Inc.",
+    "model": "MacBookAir7,2"
+  },
+  "cpu": {
+    "manufacturer": "Intel®",
+    "brand": "Core™ i5-5250U",
+    "speed": 1.6
+  },
+  "memory": "8 GB",
+  "osInfo": {
+    "platform": "darwin",
+    "distro": "macOS",
+    "release": "11.4"
+  },
+  "vscodeInfo": {
+    "version": "1.56.2",
+    "extensions": [
+      "aaron-bond.better-comments",
+      "abusaidm.html-snippets",
+      "bierner.github-markdown-preview",
+      "bierner.markdown-checkbox",
+      "bierner.markdown-emoji",
+      "bierner.markdown-preview-github-styles",
+      "bierner.markdown-yaml-preamble",
+      "coderfee.open-html-in-browser",
+      "CoenraadS.bracket-pair-colorizer",
+      "CoenraadS.bracket-pair-colorizer-2",
+      "DavidAnson.vscode-markdownlint",
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
+      "ecmel.vscode-html-css",
+      "esbenp.prettier-vscode",
+      "evgeniypeshkov.syntax-highlighter",
+      "formulahendry.code-runner",
+      "geyao.html-snippets",
+      "hdg.live-html-previewer",
+      "mkaufman.HTMLHint",
+      "mohd-akram.vscode-html-format",
+      "ms-vscode.js-debug-nightly",
+      "msjsdiag.debugger-for-chrome",
+      "otris-software.vscode-janus-debug",
+      "ritwickdey.LiveServer",
+      "streetsidesoftware.code-spell-checker",
+      "voldemortensen.rainbow-tags",
+      "WallabyJs.quokka-vscode"
+    ],
+    "userSettings": {
+      "editor.formatOnSave": true,
+      "terminal.integrated.allowMnemonics": true,
+      "terminal.integrated.tabs.enabled": true,
+      "window.zoomLevel": 1,
+      "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      }
+    }
+  }
+}
