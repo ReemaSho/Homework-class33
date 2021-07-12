@@ -14,13 +14,20 @@ calculate it!
    ages.
 -----------------------------------------------------------------------------*/
 
-function calculateDogAge(/* parameters go here */) {
-  // TODO complete this function
+function calculateDogAge(puppyAge) {
+  const puppyAgeInHumanYears = puppyAge * 7;
+  return isNaN(puppyAge) || typeof puppyAge !== 'number'
+    ? 'It is not a number'
+    : `Your doggie is ${puppyAgeInHumanYears} years old in dog years!`;
 }
 
 console.log(calculateDogAge(1)); // -> "Your doggie is 7 years old in dog years!"
 console.log(calculateDogAge(2)); // -> "Your doggie is 14 years old in dog years!"
 console.log(calculateDogAge(3)); // -> "Your doggie is 21 years old in dog years!"
+console.log(calculateDogAge('three'));
+console.log(calculateDogAge('one'));
+console.log(calculateDogAge(undefined));
+console.log(calculateDogAge('9'));
 
 // ! Do not change or remove the code below
 module.exports = calculateDogAge;
