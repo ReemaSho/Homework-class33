@@ -18,3 +18,8 @@ ex1-giveCompliment.js:42:23 - Unknown word (Alshohof)
 2021-07-12 10:53:23 info: ----------------------------------------
 2021-07-12 10:53:34 info: All unit tests passed.
 2021-07-12 10:53:39 info: All steps were completed successfully
+2021-07-12 10:58:22 info: -------------------------------------------
+2021-07-12 10:58:22 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-07-12 10:58:22 info: -------------------------------------------
+2021-07-12 10:58:32 info: All unit tests passed.
+2021-07-12 10:58:37 info: All steps were completed successfully
