@@ -82,3 +82,18 @@ ex5-shoppingCartPure.js
 2021-07-13 11:48:07 info: -----------------------------------------
 2021-07-13 11:48:07 warn: A unit test file was not provided.
 2021-07-13 11:48:12 info: All steps were completed successfully
+2021-07-13 11:58:26 info: -------------------------------------------
+2021-07-13 11:58:26 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-07-13 11:58:26 info: -------------------------------------------
+2021-07-13 11:58:36 info: All unit tests passed.
+2021-07-13 11:58:40 info: All steps were completed successfully
+2021-07-13 02:30:44 info: -------------------------------------------
+2021-07-13 02:30:44 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2021-07-13 02:30:44 info: -------------------------------------------
+2021-07-13 02:30:44 warn: A unit test file was not provided.
+2021-07-13 02:30:49 info: All steps were completed successfully
+2021-07-13 02:45:23 info: -------------------------------------------
+2021-07-13 02:45:23 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2021-07-13 02:45:23 info: -------------------------------------------
+2021-07-13 02:45:23 warn: A unit test file was not provided.
+2021-07-13 02:45:28 info: All steps were completed successfully
