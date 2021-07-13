@@ -72,3 +72,13 @@ ex5-shoppingCartPure.js
 2021-07-13 12:37:36 info: ------------------------------------------------
 2021-07-13 12:37:36 warn: A unit test file was not provided.
 2021-07-13 12:37:39 info: All steps were completed successfully
+2021-07-13 11:46:56 info: -----------------------------------------
+2021-07-13 11:46:56 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-07-13 11:46:56 info: -----------------------------------------
+2021-07-13 11:46:56 warn: A unit test file was not provided.
+2021-07-13 11:47:01 info: All steps were completed successfully
+2021-07-13 11:48:07 info: -----------------------------------------
+2021-07-13 11:48:07 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-07-13 11:48:07 info: -----------------------------------------
+2021-07-13 11:48:07 warn: A unit test file was not provided.
+2021-07-13 11:48:12 info: All steps were completed successfully
