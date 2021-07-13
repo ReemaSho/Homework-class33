@@ -43,7 +43,7 @@ function test1() {
 }
 
 function test2() {
-  console.log('\nTest 2: return correct output when passed cartForParty');
+  console.log('\nTest 2: return correct output when passed initialCart');
   const initialCart = {
     beers: 1,
     chips: 1,
