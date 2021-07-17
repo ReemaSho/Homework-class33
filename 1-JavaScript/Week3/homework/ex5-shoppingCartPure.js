@@ -18,8 +18,10 @@ it pure. Do the following:
 function addToShoppingCart(shoppingArr, cartItem) {
   const newShoppingArr = shoppingArr.slice(shoppingArr);
   newShoppingArr.push(cartItem);
-  if (newShoppingArr.length > 3) {
-    newShoppingArr.shift();
+  for (let i = 0; i <= newShoppingArr.length; i++) {
+    if (newShoppingArr.length > 3) {
+      newShoppingArr.shift();
+    }
   }
   return newShoppingArr;
 }
@@ -50,9 +52,11 @@ function test3() {
 
 function test4() {
   console.log('Test 4: `waffles` should be added');
-  const initialCart = ['bananas', 'milk', 'chocolate'];
+  const initialCart = ['bananas', 'milk', 'chocolate', 'avocado', 'salt'];
   const result = addToShoppingCart(initialCart, 'waffles');
+  console.log(result);
   console.assert(result.length === 3);
+
   console.assert(result.includes('waffles'));
 }
 

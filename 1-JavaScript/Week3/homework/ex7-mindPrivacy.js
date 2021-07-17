@@ -31,15 +31,11 @@ const employeeRecords = [
 function filterPrivateData(employeeInfo) {
   const employeeInformation = [];
 
-  for (let i = 0; i < employeeInfo.length; i++) {
-    const sharedInfo = {};
-    ({
-      name: sharedInfo.name,
-      occupation: sharedInfo.occupation,
-      email: sharedInfo.email,
-    } = employeeInfo[i]);
-    employeeInformation.push(sharedInfo);
-  }
+  employeeInfo.forEach((item) => {
+    const { name, occupation, email } = item;
+    employeeInformation.push({ name, occupation, email });
+    return employeeInformation;
+  });
 
   return employeeInformation;
 }
