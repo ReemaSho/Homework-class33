@@ -32,3 +32,167 @@ ex1-doubleEvenNumbers.test.js
 2021-07-19 12:53:34 info: ------------------------------------------------------
 2021-07-19 12:53:42 info: All unit tests passed.
 2021-07-19 12:53:47 info: All steps were completed successfully
+2021-07-19 01:35:32 info: -------------------------------------------------
+2021-07-19 01:35:32 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2021-07-19 01:35:32 info: -------------------------------------------------
+2021-07-19 01:35:42 error: *** Unit Test Error Report ***
+
+Command failed: npx jest "/Users/hackyourfuture/Desktop/Homework-class33/1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js" --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    This usually means that you are trying to import a file which Jest cannot parse, e.g. it's not plain JavaScript.
+
+    By default, if Jest sees a Babel config, it will use that to transform your files, ignoring "node_modules".
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/en/ecmascript-modules for how to enable it.
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/en/configuration.html
+
+    Details:
+
+    SyntaxError: /Users/hackyourfuture/Desktop/Homework-class33/1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js: Unexpected token (35:37)
+
+      33 |   
+      34 |   const costs = tasks.map(task => task.duration /60 * perHour);
+    > 35 |     return costs.map(cost => cost =+ );
+         |                                      ^
+      36 | 
+      37 | }
+      38 | 
+
+      at Parser._raise (node_modules/@babel/parser/src/parser/error.js:60:45)
+      at Parser.raiseWithData (node_modules/@babel/parser/src/parser/error.js:55:17)
+      at Parser.raise (node_modules/@babel/parser/src/parser/error.js:39:17)
+      at Parser.unexpected (node_modules/@babel/parser/src/parser/util.js:139:16)
+      at Parser.parseExprAtom (node_modules/@babel/parser/src/parser/expression.js:1159:20)
+      at Parser.parseExprSubscripts (node_modules/@babel/parser/src/parser/expression.js:565:23)
+      at Parser.parseUpdate (node_modules/@babel/parser/src/parser/expression.js:545:21)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.js:529:17)
+      at Parser.parseMaybeUnary (node_modules/@babel/parser/src/parser/expression.js:510:28)
+      at Parser.parseExprOps (node_modules/@babel/parser/src/parser/expression.js:349:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        5.514 s
+Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33\/1-JavaScript\/Week4\/homework\/ex2-mondaysWorth.test.js/i.
+)
+2021-07-19 01:35:44 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  35:38  error  Parsing error: Unexpected token )
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2021-07-19 03:45:52 info: -------------------------------------------------
+2021-07-19 03:45:52 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2021-07-19 03:45:52 info: -------------------------------------------------
+2021-07-19 03:46:04 info: All unit tests passed.
+2021-07-19 03:46:07 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  3:9  error  'ConsoleTransportOptions' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2021-07-19 03:55:17 info: -------------------------------------------------
+2021-07-19 03:55:17 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2021-07-19 03:55:17 info: -------------------------------------------------
+2021-07-19 03:55:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest "/Users/hackyourfuture/Desktop/Homework-class33/1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js" --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (3 ms)
+    ✕ should compute the earnings as a formatted Euro amount (6 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€NaN   "
+
+      50 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      51 |     const expected = '€187.50';
+    > 52 |     expect(result).toBe(expected);
+         |                    ^
+      53 |   });
+      54 | });
+      55 | 
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:52:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        5.582 s
+Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33\/1-JavaScript\/Week4\/homework\/ex2-mondaysWorth.test.js/i.
+)
+2021-07-19 03:56:58 info: -------------------------------------------------
+2021-07-19 03:56:58 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2021-07-19 03:56:58 info: -------------------------------------------------
+2021-07-19 03:57:06 error: *** Unit Test Error Report ***
+
+Command failed: npx jest "/Users/hackyourfuture/Desktop/Homework-class33/1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js" --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (3 ms)
+    ✕ should compute the earnings as a formatted Euro amount (5 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: "€187.50   "
+
+      52 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      53 |     const expected = '€187.50';
+    > 54 |     expect(result).toBe(expected);
+         |                    ^
+      55 |   });
+      56 | });
+      57 | 
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:54:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        5.062 s
+Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33\/1-JavaScript\/Week4\/homework\/ex2-mondaysWorth.test.js/i.
+)
+2021-07-19 03:57:51 info: -------------------------------------------------
+2021-07-19 03:57:51 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2021-07-19 03:57:51 info: -------------------------------------------------
+2021-07-19 03:57:59 info: All unit tests passed.
+2021-07-19 03:58:04 info: All steps were completed successfully
+2021-07-19 05:19:00 info: -------------------------------------------------
+2021-07-19 05:19:00 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2021-07-19 05:19:00 info: -------------------------------------------------
+2021-07-19 05:19:08 info: All unit tests passed.
+2021-07-19 05:19:11 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  3:9  error  'isNumber' is assigned a value but never used  no-unused-vars
+  4:9  error  'duration' is assigned a value but never used  no-unused-vars
+
+✖ 2 problems (2 errors, 0 warnings)
+
+
+2021-07-19 05:19:55 info: -------------------------------------------------
+2021-07-19 05:19:55 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2021-07-19 05:19:55 info: -------------------------------------------------
+2021-07-19 05:19:58 info: All unit tests passed.
+2021-07-19 05:20:00 info: All steps were completed successfully

@@ -1,4 +1,5 @@
 'use strict';
+
 /*
 - Complete the function names `computeEarnings`. It should take an array of
   tasks and an hourly rate as arguments and return a formatted Euro amount
@@ -29,9 +30,21 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function computeEarnings(dayTasks, ratePerHour) {
+  const dayEarnings = dayTasks.map((task) => {
+    if (typeof task.duration === 'number') {
+      return (task.duration / 60) * ratePerHour;
+    }
+  });
+
+  const total = dayEarnings.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    0
+  );
+
+  return `€${total.toFixed(2)}`;
 }
+console.log(computeEarnings(mondayTasks, hourlyRate));
 
 // ! Unit tests (using Jest)
 describe('computeEarnings', () => {
