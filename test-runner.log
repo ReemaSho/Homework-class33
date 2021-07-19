@@ -196,3 +196,8 @@ ex2-mondaysWorth.test.js
 2021-07-19 05:19:55 info: -------------------------------------------------
 2021-07-19 05:19:58 info: All unit tests passed.
 2021-07-19 05:20:00 info: All steps were completed successfully
+2021-07-19 06:11:03 info: -------------------------------------------------
+2021-07-19 06:11:03 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2021-07-19 06:11:03 info: -------------------------------------------------
+2021-07-19 06:11:13 info: All unit tests passed.
+2021-07-19 06:11:17 info: All steps were completed successfully
