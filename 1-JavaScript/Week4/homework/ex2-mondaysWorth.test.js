@@ -44,7 +44,6 @@ function computeEarnings(dayTasks, ratePerHour) {
 
   return `€${total.toFixed(2)}`;
 }
-console.log(computeEarnings(mondayTasks, hourlyRate));
 
 // ! Unit tests (using Jest)
 describe('computeEarnings', () => {
