@@ -1,0 +1,12 @@
+
+*** ESLint Report ***
+
+ex2-aboutMe/index.js
+  13:1  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+*** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:54 - Unknown word (Mera)

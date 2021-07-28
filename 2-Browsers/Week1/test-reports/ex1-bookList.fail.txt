@@ -1,0 +1,42 @@
+*** Unit Test Error Report ***
+
+Command failed: npx jest "/Users/hackyourfuture/Desktop/Homework-class33/2-Browsers/Week1/unit-tests/ex1-bookList.test.js" --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (8.12 s)
+  Generated HTML
+    ✕ HTML should be syntactically valid (190 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (3 ms)
+    ✓ should contain a <ul> with 3 <li> elements (2 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✓ should contain an <img> element for each book (2 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:197  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:334  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:462  error  <img> is missing required \"alt\" attribute  wcag/h37
+    
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      40 |   const report = htmlValidate.validateString(htmlText);
+      41 |   const validationReport = stylish(report);
+    > 42 |   expect(validationReport).toBe('');
+         |                            ^
+      43 | }
+      44 | 
+      45 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:42:28)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:39:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        12.137 s
+Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33\/2-Browsers\/Week1\/unit-tests\/ex1-bookList.test.js/i.
+)

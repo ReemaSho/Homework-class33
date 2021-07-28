@@ -19,8 +19,23 @@
 
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
+
+
+//to mintors: i'm not finish yet with this exercise, I;m trying to start the cat from the left
+const walkingCat = document.querySelector('img');
+
+walkingCat.style.left = 0 + 'px';
+const startTime = new Date().getTime();
 function catWalk() {
-  // TODO complete this function
+  const currTime = new Date().getTime();
+  const newLeft = 0 + ((currTime - startTime) / 1000) * 50;
+  walkingCat.style.left = newLeft + 'px';
+  window.requestAnimationFrame(catWalk);
+  if (walkingCat.offsetLeft >= window.innerWidth) {
+    walkingCat.style.left = 0 + 'px';
+  }
+  window.requestAnimationFrame(catWalk);
 }
 
 // TODO execute `catWalk` when the browser has completed loading the page
+catWalk();

@@ -1,0 +1,739 @@
+2021-07-28 12:35:26 info: ---------------------------------------
+2021-07-28 12:35:26 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2021-07-28 12:35:26 info: ---------------------------------------
+2021-07-28 12:35:45 error: *** Unit Test Error Report ***
+
+Command failed: npx jest "/Users/hackyourfuture/Desktop/Homework-class33/2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js" --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (8.843 s)
+  Generated HTML
+    ✓ should be syntactically valid (100 ms)
+    ✓ - the body font-family should be `Arial, sans-serif` (1 ms)
+    ✕ - each <li> should have the CSS class `list-item` (6 ms)
+    ✕ - each <li> should rendered red (44 ms)
+
+  ● Generated HTML › - each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      22 |     const nodeList = document.querySelectorAll('li');
+      23 |     const classNames = [...nodeList].map((node) => node.className);
+    > 24 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+         |                                                              ^
+      25 |   });
+      26 | 
+      27 |   test('- each <li> should rendered red', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:24:62)
+
+  ● Generated HTML › - each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      30 |       (node) => window.getComputedStyle(node).color
+      31 |     );
+    > 32 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      33 |   });
+      34 | });
+      35 | 
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:32:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 2 passed, 4 total
+Snapshots:   0 total
+Time:        12.775 s
+Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33\/2-Browsers\/Week1\/unit-tests\/ex2-aboutMe.test.js/i.
+)
+2021-07-28 12:35:48 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  13:1  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-07-28 12:35:51 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:54 - Unknown word (Mera)
+
+2021-07-28 12:41:20 info: ---------------------------------------
+2021-07-28 12:41:20 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2021-07-28 12:41:20 info: ---------------------------------------
+2021-07-28 12:41:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest "/Users/hackyourfuture/Desktop/Homework-class33/2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js" --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (5.246 s)
+  Generated HTML
+    ✓ should be syntactically valid (113 ms)
+    ✓ - the body font-family should be `Arial, sans-serif` (2 ms)
+    ✓ - each <li> should have the CSS class `list-item`
+    ✕ - each <li> should rendered red (41 ms)
+
+  ● Generated HTML › - each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      30 |       (node) => window.getComputedStyle(node).color
+      31 |     );
+    > 32 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      33 |   });
+      34 | });
+      35 | 
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:32:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 3 passed, 4 total
+Snapshots:   0 total
+Time:        9.378 s
+Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33\/2-Browsers\/Week1\/unit-tests\/ex2-aboutMe.test.js/i.
+)
+2021-07-28 12:41:38 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  13:1  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-07-28 12:41:40 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:54 - Unknown word (Mera)
+
+2021-07-28 12:46:11 info: ---------------------------------------
+2021-07-28 12:46:11 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2021-07-28 12:46:11 info: ---------------------------------------
+2021-07-28 12:46:26 error: *** Unit Test Error Report ***
+
+Command failed: npx jest "/Users/hackyourfuture/Desktop/Homework-class33/2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js" --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (6.503 s)
+  Generated HTML
+    ✓ should be syntactically valid (112 ms)
+    ✓ - the body font-family should be `Arial, sans-serif` (1 ms)
+    ✕ - each <li> should have the CSS class `list-item` (5 ms)
+    ✕ - each <li> should rendered red (41 ms)
+
+  ● Generated HTML › - each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      22 |     const nodeList = document.querySelectorAll('li');
+      23 |     const classNames = [...nodeList].map((node) => node.className);
+    > 24 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+         |                                                              ^
+      25 |   });
+      26 | 
+      27 |   test('- each <li> should rendered red', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:24:62)
+
+  ● Generated HTML › - each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      30 |       (node) => window.getComputedStyle(node).color
+      31 |     );
+    > 32 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      33 |   });
+      34 | });
+      35 | 
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:32:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 2 passed, 4 total
+Snapshots:   0 total
+Time:        10.628 s
+Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33\/2-Browsers\/Week1\/unit-tests\/ex2-aboutMe.test.js/i.
+)
+2021-07-28 12:46:29 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  13:1  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-07-28 12:46:31 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:54 - Unknown word (Mera)
+
+2021-07-28 12:50:26 info: ---------------------------------------
+2021-07-28 12:50:26 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2021-07-28 12:50:26 info: ---------------------------------------
+2021-07-28 12:50:45 error: *** Unit Test Error Report ***
+
+Command failed: npx jest "/Users/hackyourfuture/Desktop/Homework-class33/2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js" --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js (8.957 s)
+  Generated HTML
+    ✓ should be syntactically valid (105 ms)
+    ✓ - the body font-family should be `Arial, sans-serif` (1 ms)
+    ✕ - each <li> should have the CSS class `list-item` (5 ms)
+    ✕ - each <li> should rendered red (40 ms)
+
+  ● Generated HTML › - each <li> should have the CSS class `list-item`
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      22 |     const nodeList = document.querySelectorAll('li');
+      23 |     const classNames = [...nodeList].map((node) => node.className);
+    > 24 |     expect(classNames.every((name) => name === 'list-item')).toBeTruthy();
+         |                                                              ^
+      25 |   });
+      26 | 
+      27 |   test('- each <li> should rendered red', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:24:62)
+
+  ● Generated HTML › - each <li> should rendered red
+
+    expect(received).toBeTruthy()
+
+    Received: false
+
+      30 |       (node) => window.getComputedStyle(node).color
+      31 |     );
+    > 32 |     expect(colors.every((color) => color === 'red')).toBeTruthy();
+         |                                                      ^
+      33 |   });
+      34 | });
+      35 | 
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex2-aboutMe.test.js:32:54)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 2 passed, 4 total
+Snapshots:   0 total
+Time:        13.107 s
+Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33\/2-Browsers\/Week1\/unit-tests\/ex2-aboutMe.test.js/i.
+)
+2021-07-28 12:50:48 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  13:1  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-07-28 12:50:51 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:54 - Unknown word (Mera)
+
+2021-07-28 12:53:25 info: ---------------------------------------
+2021-07-28 12:53:25 info: >>> Running Unit Test `ex2-aboutMe` <<<
+2021-07-28 12:53:25 info: ---------------------------------------
+2021-07-28 12:53:38 info: All unit tests passed.
+2021-07-28 12:53:41 error: *** ESLint Report ***
+
+ex2-aboutMe/index.js
+  13:1  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-07-28 12:53:44 error: *** Spell Checker Report ***
+
+ex2-aboutMe/index.js:13:54 - Unknown word (Mera)
+
+2021-07-28 12:54:19 info: ----------------------------------------
+2021-07-28 12:54:19 info: >>> Running Unit Test `ex1-bookList` <<<
+2021-07-28 12:54:19 info: ----------------------------------------
+2021-07-28 12:54:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest "/Users/hackyourfuture/Desktop/Homework-class33/2-Browsers/Week1/unit-tests/ex1-bookList.test.js" --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (5.95 s)
+  Generated HTML
+    ✕ HTML should be syntactically valid (109 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (2 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✓ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      17:43   error  Element <p> is not permitted as content in <ul>  element-permitted-content
+      17:125  error  <img> is missing required \"alt\" attribute        wcag/h37
+      17:267  error  <img> is missing required \"alt\" attribute        wcag/h37
+      17:400  error  <img> is missing required \"alt\" attribute        wcag/h37
+    
+    ✖ 4 problems (4 errors, 0 warnings)
+    "
+
+      40 |   const report = htmlValidate.validateString(htmlText);
+      41 |   const validationReport = stylish(report);
+    > 42 |   expect(validationReport).toBe('');
+         |                            ^
+      43 | }
+      44 | 
+      45 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:42:28)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:39:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        10.077 s
+Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33\/2-Browsers\/Week1\/unit-tests\/ex1-bookList.test.js/i.
+)
+2021-07-28 12:54:37 error: *** ESLint Report ***
+
+ex1-bookList/index.js
+  48:11  warning  Identifier 'ABook' is not in camelCase  hyf/camelcase
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-07-28 01:11:06 info: --------------------------------------------
+2021-07-28 01:11:06 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2021-07-28 01:11:06 info: --------------------------------------------
+2021-07-28 01:11:24 error: *** Unit Test Error Report ***
+
+  console.error
+    Error: Uncaught [ReferenceError: DATE is not defined]
+        at reportException (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:62:24)
+        at processJavaScript (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:243:7)
+        at HTMLScriptElementImpl._innerEval (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:176:5)
+        at onLoadExternalScript (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:98:12)
+        at onLoadWrapped (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/browser/resources/per-document-resource-loader.js:53:33)
+        at Object.check (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/browser/resources/resource-queue.js:76:23)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/browser/resources/resource-queue.js:119:14
+        at processTicksAndRejections (internal/process/task_queues.js:95:5) ReferenceError: DATE is not defined
+        at addCurrentTime (file:///Users/hackyourfuture/Desktop/Homework-class33/2-Browsers/Week1/homework/ex4-whatsTheTime/index.js:9:17)
+        at file:///Users/hackyourfuture/Desktop/Homework-class33/2-Browsers/Week1/homework/ex4-whatsTheTime/index.js:16:1
+        at Script.runInContext (vm.js:144:12)
+        at Object.runInContext (vm.js:295:6)
+        at processJavaScript (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:241:10)
+        at HTMLScriptElementImpl._innerEval (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:176:5)
+        at onLoadExternalScript (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:98:12)
+        at onLoadWrapped (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/browser/resources/per-document-resource-loader.js:53:33)
+        at Object.check (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/browser/resources/resource-queue.js:76:23)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/browser/resources/resource-queue.js:119:14
+
+      at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
+      at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:28)
+      at processJavaScript (node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:243:7)
+      at HTMLScriptElementImpl._innerEval (node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:176:5)
+      at onLoadExternalScript (node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:98:12)
+      at onLoadWrapped (node_modules/jsdom/lib/jsdom/browser/resources/per-document-resource-loader.js:53:33)
+
+)
+2021-07-28 01:11:27 error: *** ESLint Report ***
+
+ex4-whatsTheTime/index.js
+  9:21  error  'DATE' is not defined  no-undef
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2021-07-28 01:12:19 info: --------------------------------------------
+2021-07-28 01:12:19 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2021-07-28 01:12:19 info: --------------------------------------------
+2021-07-28 01:12:35 error: *** Unit Test Error Report ***
+
+Command failed: npx jest "/Users/hackyourfuture/Desktop/Homework-class33/2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js" --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (7.685 s)
+  whatsTheTime
+    ✓ HTML should be syntactically valid (102 ms)
+    ✓ should use `setInterval()`
+    ✓ should not call `setInterval()` more than once (2007 ms)
+    ✕ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (6 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      55 | 
+      56 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 57 |     expect(state.onload).toBeDefined();
+         |                          ^
+      58 |   });
+      59 | 
+      60 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:57:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        11.848 s
+Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33\/2-Browsers\/Week1\/unit-tests\/ex4-whatsTheTime.test.js/i.
+)
+2021-07-28 01:16:14 info: --------------------------------------------
+2021-07-28 01:16:14 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2021-07-28 01:16:14 info: --------------------------------------------
+2021-07-28 01:16:35 error: *** Unit Test Error Report ***
+
+  console.error
+    Error: Uncaught [TypeError: Failed to execute 'addEventListener' on 'EventTarget': 2 arguments required, but only 1 present.]
+        at reportException (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:62:24)
+        at processJavaScript (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:243:7)
+        at HTMLScriptElementImpl._innerEval (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:176:5)
+        at onLoadExternalScript (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:98:12)
+        at onLoadWrapped (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/browser/resources/per-document-resource-loader.js:53:33)
+        at Object.check (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/browser/resources/resource-queue.js:76:23)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/browser/resources/resource-queue.js:119:14
+        at processTicksAndRejections (internal/process/task_queues.js:95:5) TypeError: Failed to execute 'addEventListener' on 'EventTarget': 2 arguments required, but only 1 present.
+        at addEventListener (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:103:15)
+        at file:///Users/hackyourfuture/Desktop/Homework-class33/2-Browsers/Week1/homework/ex4-whatsTheTime/index.js:17:8
+        at Script.runInContext (vm.js:144:12)
+        at Object.runInContext (vm.js:295:6)
+        at processJavaScript (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:241:10)
+        at HTMLScriptElementImpl._innerEval (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:176:5)
+        at onLoadExternalScript (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:98:12)
+        at onLoadWrapped (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/browser/resources/per-document-resource-loader.js:53:33)
+        at Object.check (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/browser/resources/resource-queue.js:76:23)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jsdom/lib/jsdom/browser/resources/resource-queue.js:119:14
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+
+      at VirtualConsole.<anonymous> (node_modules/jsdom/lib/jsdom/virtual-console.js:29:45)
+      at reportException (node_modules/jsdom/lib/jsdom/living/helpers/runtime-script-errors.js:66:28)
+      at processJavaScript (node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:243:7)
+      at HTMLScriptElementImpl._innerEval (node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:176:5)
+      at onLoadExternalScript (node_modules/jsdom/lib/jsdom/living/nodes/HTMLScriptElement-impl.js:98:12)
+      at onLoadWrapped (node_modules/jsdom/lib/jsdom/browser/resources/per-document-resource-loader.js:53:33)
+
+)
+2021-07-28 01:16:39 error: *** ESLint Report ***
+
+ex4-whatsTheTime/index.js
+  12:9  error  'timeNow' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2021-07-28 01:21:13 info: --------------------------------------------
+2021-07-28 01:21:13 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2021-07-28 01:21:13 info: --------------------------------------------
+2021-07-28 01:21:34 info: All unit tests passed.
+2021-07-28 01:21:39 info: All steps were completed successfully
+2021-07-28 01:47:35 info: --------------------------------------------
+2021-07-28 01:47:35 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2021-07-28 01:47:35 info: --------------------------------------------
+2021-07-28 01:47:53 error: *** Unit Test Error Report ***
+
+Command failed: npx jest "/Users/hackyourfuture/Desktop/Homework-class33/2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js" --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (8.816 s)
+  whatsTheTime
+    ✓ HTML should be syntactically valid (101 ms)
+    ✓ should use `setInterval()`
+    ✓ should not call `setInterval()` more than once (2002 ms)
+    ✕ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (7 ms)
+    ✓ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● whatsTheTime › should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      55 | 
+      56 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+    > 57 |     expect(state.onload).toBeDefined();
+         |                          ^
+      58 |   });
+      59 | 
+      60 |   test('`window.onload` or `window.addEventListener` should not call its event handler function', () => {
+
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:57:26)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        12.75 s
+Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33\/2-Browsers\/Week1\/unit-tests\/ex4-whatsTheTime.test.js/i.
+)
+2021-07-28 01:47:56 error: *** ESLint Report ***
+
+ex4-whatsTheTime/index.js
+  10:3  warning  Remove commented-out code                                                                                   hyf/no-commented-out-code
+  17:3  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+  20:1  warning  Remove commented-out code                                                                                   hyf/no-commented-out-code
+  24:1  warning  Remove commented-out code                                                                                   hyf/no-commented-out-code
+
+✖ 4 problems (0 errors, 4 warnings)
+
+
+2021-07-28 01:48:42 info: --------------------------------------------
+2021-07-28 01:48:42 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2021-07-28 01:48:42 info: --------------------------------------------
+2021-07-28 01:49:01 info: All unit tests passed.
+2021-07-28 01:49:05 error: *** ESLint Report ***
+
+ex4-whatsTheTime/index.js
+  10:3  warning  Remove commented-out code                                                                                   hyf/no-commented-out-code
+  17:3  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2021-07-28 01:49:27 info: --------------------------------------------
+2021-07-28 01:49:27 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2021-07-28 01:49:27 info: --------------------------------------------
+2021-07-28 01:49:47 info: All unit tests passed.
+2021-07-28 01:49:51 error: *** ESLint Report ***
+
+ex4-whatsTheTime/index.js
+  12:3  warning  Please do not use `innerHTML` in the homework. Use `textContent` and/or `document.createElement()` instead  no-restricted-syntax
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-07-28 01:51:13 info: --------------------------------------------
+2021-07-28 01:51:13 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2021-07-28 01:51:13 info: --------------------------------------------
+2021-07-28 01:51:30 info: All unit tests passed.
+2021-07-28 01:51:36 info: All steps were completed successfully
+2021-07-28 05:07:02 info: ------------------------------------------
+2021-07-28 05:07:02 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2021-07-28 05:07:02 info: ------------------------------------------
+2021-07-28 05:07:17 info: All unit tests passed.
+2021-07-28 05:07:24 info: All steps were completed successfully
+2021-07-28 05:30:07 info: ----------------------------------------
+2021-07-28 05:30:07 info: >>> Running Unit Test `ex1-bookList` <<<
+2021-07-28 05:30:07 info: ----------------------------------------
+2021-07-28 05:30:18 error: *** Unit Test Error Report ***
+
+Command failed: npx jest "/Users/hackyourfuture/Desktop/Homework-class33/2-Browsers/Week1/unit-tests/ex1-bookList.test.js" --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js
+  Generated HTML
+    ✕ HTML should be syntactically valid (129 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (3 ms)
+    ✓ should contain a <ul> with 3 <li> elements (1 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✓ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:197  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:346  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:486  error  <img> is missing required \"alt\" attribute  wcag/h37
+    
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      40 |   const report = htmlValidate.validateString(htmlText);
+      41 |   const validationReport = stylish(report);
+    > 42 |   expect(validationReport).toBe('');
+         |                            ^
+      43 | }
+      44 | 
+      45 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:42:28)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:39:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        6.17 s
+Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33\/2-Browsers\/Week1\/unit-tests\/ex1-bookList.test.js/i.
+)
+2021-07-28 05:31:44 info: ----------------------------------------
+2021-07-28 05:31:44 info: >>> Running Unit Test `ex1-bookList` <<<
+2021-07-28 05:31:44 info: ----------------------------------------
+2021-07-28 05:31:53 error: *** Unit Test Error Report ***
+
+Command failed: npx jest "/Users/hackyourfuture/Desktop/Homework-class33/2-Browsers/Week1/unit-tests/ex1-bookList.test.js" --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (5.026 s)
+  Generated HTML
+    ✕ HTML should be syntactically valid (330 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (4 ms)
+    ✓ should contain a <ul> with 3 <li> elements (4 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✓ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:197  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:334  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:462  error  <img> is missing required \"alt\" attribute  wcag/h37
+    
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      40 |   const report = htmlValidate.validateString(htmlText);
+      41 |   const validationReport = stylish(report);
+    > 42 |   expect(validationReport).toBe('');
+         |                            ^
+      43 | }
+      44 | 
+      45 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:42:28)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:39:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        6.596 s
+Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33\/2-Browsers\/Week1\/unit-tests\/ex1-bookList.test.js/i.
+)
+2021-07-28 05:33:51 info: ----------------------------------------
+2021-07-28 05:33:51 info: >>> Running Unit Test `ex1-bookList` <<<
+2021-07-28 05:33:51 info: ----------------------------------------
+2021-07-28 05:34:04 error: *** Unit Test Error Report ***
+
+Command failed: npx jest "/Users/hackyourfuture/Desktop/Homework-class33/2-Browsers/Week1/unit-tests/ex1-bookList.test.js" --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (5.137 s)
+  Generated HTML
+    ✕ HTML should be syntactically valid (131 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (3 ms)
+    ✓ should contain a <ul> with 3 <li> elements (2 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✓ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:197  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:334  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:462  error  <img> is missing required \"alt\" attribute  wcag/h37
+    
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      40 |   const report = htmlValidate.validateString(htmlText);
+      41 |   const validationReport = stylish(report);
+    > 42 |   expect(validationReport).toBe('');
+         |                            ^
+      43 | }
+      44 | 
+      45 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:42:28)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:39:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        8.805 s
+Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33\/2-Browsers\/Week1\/unit-tests\/ex1-bookList.test.js/i.
+)
+2021-07-28 05:34:52 info: ----------------------------------------
+2021-07-28 05:34:52 info: >>> Running Unit Test `ex1-bookList` <<<
+2021-07-28 05:34:52 info: ----------------------------------------
+2021-07-28 05:35:09 error: *** Unit Test Error Report ***
+
+Command failed: npx jest "/Users/hackyourfuture/Desktop/Homework-class33/2-Browsers/Week1/unit-tests/ex1-bookList.test.js" --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (8.004 s)
+  Generated HTML
+    ✕ HTML should be syntactically valid (125 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (2 ms)
+    ✓ should contain a <ul> with 3 <li> elements (2 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (3 ms)
+    ✓ should contain an <img> element for each book (1 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:197  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:334  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:462  error  <img> is missing required \"alt\" attribute  wcag/h37
+    
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      40 |   const report = htmlValidate.validateString(htmlText);
+      41 |   const validationReport = stylish(report);
+    > 42 |   expect(validationReport).toBe('');
+         |                            ^
+      43 | }
+      44 | 
+      45 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:42:28)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:39:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        12.02 s
+Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33\/2-Browsers\/Week1\/unit-tests\/ex1-bookList.test.js/i.
+)
+2021-07-28 05:35:48 info: ----------------------------------------
+2021-07-28 05:35:48 info: >>> Running Unit Test `ex1-bookList` <<<
+2021-07-28 05:35:48 info: ----------------------------------------
+2021-07-28 05:36:05 error: *** Unit Test Error Report ***
+
+Command failed: npx jest "/Users/hackyourfuture/Desktop/Homework-class33/2-Browsers/Week1/unit-tests/ex1-bookList.test.js" --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex1-bookList.test.js (8.12 s)
+  Generated HTML
+    ✕ HTML should be syntactically valid (190 ms)
+    ✓ should contain a <ul> that is a child of <div id="bookList"> (3 ms)
+    ✓ should contain a <ul> with 3 <li> elements (2 ms)
+    ✓ should contain an <li> with title and author for each book of the `myBooks` array (2 ms)
+    ✓ should contain an <img> element for each book (2 ms)
+
+  ● Generated HTML › HTML should be syntactically valid
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: ""
+    Received: "
+    inline
+      11:197  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:334  error  <img> is missing required \"alt\" attribute  wcag/h37
+      11:462  error  <img> is missing required \"alt\" attribute  wcag/h37
+    
+    ✖ 3 problems (3 errors, 0 warnings)
+    "
+
+      40 |   const report = htmlValidate.validateString(htmlText);
+      41 |   const validationReport = stylish(report);
+    > 42 |   expect(validationReport).toBe('');
+         |                            ^
+      43 | }
+      44 | 
+      45 | module.exports = {
+
+      at validateHTML (test-runner/jsdom-helpers.js:42:28)
+      at Object.<anonymous> (2-Browsers/Week1/unit-tests/ex1-bookList.test.js:39:5)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        12.137 s
+Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33\/2-Browsers\/Week1\/unit-tests\/ex1-bookList.test.js/i.
+)

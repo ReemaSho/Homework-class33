@@ -8,4 +8,13 @@
    `list-item`.
 ------------------------------------------------------------------------------*/
 
-// TODO add your JavaScript code here.
+document.body.style.fontFamily = 'Arial, sans-serif';
+
+document.getElementById('nickname').innerHTML = '<em>Mera</em>';
+document.getElementById('fav-food').textContent = 'Pasta';
+document.getElementById('hometown').textContent = 'Syria';
+const information = document.querySelectorAll('li');
+information;
+for (let i = 0; i < information.length; i++) {
+  information[i].classList.add('list-item');
+}
