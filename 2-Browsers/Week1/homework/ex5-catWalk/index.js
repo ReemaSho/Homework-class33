@@ -20,21 +20,42 @@
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
 
-
-//to mintors: i'm not finish yet with this exercise, I;m trying to start the cat from the left
+//grab the cat and set left and width to it
 const walkingCat = document.querySelector('img');
+let left = 0;
+const width = 300;
+walkingCat.style.left = left + 'px';
+walkingCat.style.width = width + 'px';
 
-walkingCat.style.left = 0 + 'px';
-const startTime = new Date().getTime();
 function catWalk() {
-  const currTime = new Date().getTime();
-  const newLeft = 0 + ((currTime - startTime) / 1000) * 50;
-  walkingCat.style.left = newLeft + 'px';
-  window.requestAnimationFrame(catWalk);
-  if (walkingCat.offsetLeft >= window.innerWidth) {
-    walkingCat.style.left = 0 + 'px';
+  //call an inner  function with setInterval
+  let walk = setInterval(walkBreakPoints, 50);
+  // make another function to set all the walking breakpoints
+  function walkBreakPoints() {
+    const windowWidth = parseInt(window.innerWidth);
+    const halfOfTheScreen = parseInt(windowWidth / 2);
+    //stop at the middle for 5 seconds
+    if (left + width === halfOfTheScreen) {
+      walkingCat.src =
+        'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
+      clearInterval(walk);
+
+      window.setTimeout(() => {
+        left += 10;
+        walkingCat.src =
+          'http://www.anniemation.com/clip_art/images/cat-walk.gif';
+        walk = setInterval(walkBreakPoints, 50);
+      }, 5000);
+      //reset the left at the end
+    } else if (left === windowWidth) {
+      left = 0;
+
+      //normal situation
+    } else {
+      left += 10;
+      walkingCat.style.left = left + 'px';
+    }
   }
-  window.requestAnimationFrame(catWalk);
 }
 
 // TODO execute `catWalk` when the browser has completed loading the page
