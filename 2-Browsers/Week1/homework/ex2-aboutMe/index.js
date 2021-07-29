@@ -10,7 +10,7 @@
 
 document.body.style.fontFamily = 'Arial, sans-serif';
 
-document.getElementById('nickname').innerHTML = '<em>Mera</em>';
+document.getElementById('nickname').textContent = 'Mera';
 document.getElementById('fav-food').textContent = 'Pasta';
 document.getElementById('hometown').textContent = 'Syria';
 const information = document.querySelectorAll('li');

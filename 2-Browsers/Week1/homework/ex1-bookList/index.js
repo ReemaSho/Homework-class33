@@ -39,6 +39,12 @@ const myBooks = [
   },
 ];
 
+// list-style: none;
+// display: flex;
+// flex-wrap: wrap;
+// padding: 20px;
+// width: calc( 100% - 41px)
+
 function createBookList(books) {
   const booksCollection = document.createElement('ul');
   booksCollection.style.display = 'flex';
@@ -55,14 +61,19 @@ function createBookList(books) {
     bookListItem.appendChild(createABook);
     //create img  and add it to the list item
     const coverBook = document.createElement('img');
+    coverBook.style.width = 200 + 'px';
+
     bookListItem.appendChild(coverBook);
 
     if (book.title === 'The Design of Everyday Things') {
       coverBook.src = 'assets/the_design_of_everyday_things.jpg';
+      coverBook.alt = 'Book cover';
     } else if (book.title === 'The Most Human Human') {
       coverBook.src = 'assets/the_most_human_human.jpg';
+      coverBook.alt = 'Book cover';
     } else if (book.title === 'The Pragmatic Programmer') {
       coverBook.src = 'assets/the_pragmatic_programmer.jpg';
+      coverBook.alt = 'Book cover';
     }
     // set the background color
     if (book.alreadyRead === true) {
