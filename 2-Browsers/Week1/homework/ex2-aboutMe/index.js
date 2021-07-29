@@ -9,12 +9,10 @@
 ------------------------------------------------------------------------------*/
 
 document.body.style.fontFamily = 'Arial, sans-serif';
-
 document.getElementById('nickname').textContent = 'Mera';
 document.getElementById('fav-food').textContent = 'Pasta';
-document.getElementById('hometown').textContent = 'Syria';
+document.getElementById('hometown').textContent = 'Shahba';
 const information = document.querySelectorAll('li');
-information;
 for (let i = 0; i < information.length; i++) {
   information[i].classList.add('list-item');
 }
