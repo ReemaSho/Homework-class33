@@ -899,3 +899,8 @@ Ran all test suites matching /\/Users\/hackyourfuture\/Desktop\/Homework-class33
 2021-07-29 08:01:59 info: ----------------------------------------
 2021-07-29 08:02:05 info: All unit tests passed.
 2021-07-29 08:02:08 info: All steps were completed successfully
+2021-07-30 11:17:29 info: ---------------------------------------
+2021-07-30 11:17:29 info: >>> Running Unit Test `ex5-catWalk` <<<
+2021-07-30 11:17:29 info: ---------------------------------------
+2021-07-30 11:17:42 info: All unit tests passed.
+2021-07-30 11:17:47 info: All steps were completed successfully

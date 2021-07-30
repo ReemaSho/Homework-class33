@@ -35,7 +35,10 @@ function catWalk() {
     const windowWidth = parseInt(window.innerWidth);
     const halfOfTheScreen = parseInt(windowWidth / 2);
     //stop at the middle for 5 seconds
-    if (left + width === halfOfTheScreen) {
+    if (
+      left + width >= halfOfTheScreen &&
+      left + width <= halfOfTheScreen + 10
+    ) {
       walkingCat.src =
         'https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif';
       clearInterval(walk);
@@ -47,7 +50,7 @@ function catWalk() {
         walk = setInterval(walkBreakPoints, 50);
       }, 5000);
       //reset the left at the end
-    } else if (left === windowWidth) {
+    } else if (left >= windowWidth - 10 && left <= windowWidth) {
       left = 0;
 
       //normal situation
@@ -59,4 +62,5 @@ function catWalk() {
 }
 
 // TODO execute `catWalk` when the browser has completed loading the page
-catWalk();
+
+window.addEventListener('load', catWalk);
