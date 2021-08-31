@@ -64,7 +64,7 @@ doesn't stop. and it continue executing until its condition evaluate to false (r
 so the last call of rollDice() is when (roll === randomRollsToDo) which is also the condition of the success callback function.
 therefore we got a success message after an error message when the randomRollsToDo's is more than 6.
 ##### how to fix it ?
-we have to stop  calling rollDice() after we got an error message , we can do than by adding <<<return>>> 
+we have to stop  calling rollDice() after we got an error message by adding the  <<<return>>> keyword
 after executing the callback function with an error, like this:
 if (roll > 6) {
     callback(new Error('Oops... Dice rolled off the table.'));
