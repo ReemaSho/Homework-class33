@@ -26,12 +26,22 @@ const rollDice = require('../../helpers/pokerDiceRoller');
 function rollTheDices() {
   // TODO Refactor this function
   const dices = [1, 2, 3, 4, 5];
-  return rollDice(1);
+  const rolledDices = [];
+
+  dices.forEach((dice) => rolledDices.push(rollDice(dice)));
+  return Promise.all(rolledDices);
 }
 
 rollTheDices()
   .then((results) => console.log('Resolved!', results))
   .catch((error) => console.log('Rejected!', error.message));
+
+/** The output which we got after the rejected message is because of the log functions:
+ *  logFn(`Dice ${dice} is now: ${side}`);
+ *  logFn(`Dice ${dice} continues rolling on the floor...`);
+ *
+ *  which means that the function continue executing until all the promises are handled,
+ *  but the call of resolve or reject are ignored after getting the first reject call.  */
 
 // ! Do not change or remove the code below
 module.exports = rollTheDices;

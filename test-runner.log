@@ -1,0 +1,960 @@
+2021-08-30 02:01:00 info: ---------------------------------------
+2021-08-30 02:01:00 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 02:01:00 info: ---------------------------------------
+2021-08-30 02:01:12 error: *** Unit Test Error Report ***
+
+  console.log
+    John Doe
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:21:15
+
+  console.log
+    John Doe
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:21:15
+
+  console.log
+    Error: You didn't pass in a first name!
+        at /Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/homework/ex1-johnWho.js:13:14
+        at new Promise (<anonymous>)
+        at getAnonName (/Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/homework/ex1-johnWho.js:11:21)
+        at Object.<anonymous> (/Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:76:21)
+        at Object.asyncJestTest (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+        at new Promise (<anonymous>)
+        at mapper (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:23:29
+
+
+2021-08-30 02:02:02 info: ---------------------------------------
+2021-08-30 02:02:02 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 02:02:02 info: ---------------------------------------
+2021-08-30 02:02:04 error: *** Unit Test Error Report ***
+
+  console.log
+    John Doe
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:21:15
+
+  console.log
+    John Doe
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:21:15
+
+  console.log
+    Error: You didn't pass in a first name!
+        at /Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/homework/ex1-johnWho.js:13:14
+        at new Promise (<anonymous>)
+        at getAnonName (/Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/homework/ex1-johnWho.js:11:21)
+        at Object.<anonymous> (/Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:76:21)
+        at Object.asyncJestTest (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+        at new Promise (<anonymous>)
+        at mapper (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:23:29
+
+
+2021-08-30 02:05:56 info: ---------------------------------------
+2021-08-30 02:05:56 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 02:05:56 info: ---------------------------------------
+2021-08-30 02:06:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    ✓ should exist and be executable (2 ms)
+    ✓ should call `new Promise()`
+    ✓ should take a single argument (1 ms)
+    ✓ : `resolve()` should be called with a one argument
+    ✓ : `reject()` should be called with a one argument
+    ✕ should resolve when called with a string argument (3 ms)
+    ✕ should reject with an Error object when called without an argument (2 ms)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      67 |     expect.assertions(2);
+      68 |     const promise = getAnonName('John');
+    > 69 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      70 |     return expect(promise).resolves.toEqual('John Doe');
+      71 |   });
+      72 | 
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:69:21)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      65 |   test('should resolve when called with a string argument', () => {
+      66 |     if (!exported) return;
+    > 67 |     expect.assertions(2);
+         |            ^
+      68 |     const promise = getAnonName('John');
+      69 |     expect(promise).toBeInstanceOf(Promise);
+      70 |     return expect(promise).resolves.toEqual('John Doe');
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:67:12)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      75 |     expect.assertions(2);
+      76 |     const promise = getAnonName();
+    > 77 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      78 |     return expect(promise).rejects.toBeInstanceOf(Error);
+      79 |   });
+      80 | });
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:77:21)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      73 |   test('should reject with an Error object when called without an argument', () => {
+      74 |     if (!exported) return;
+    > 75 |     expect.assertions(2);
+         |            ^
+      76 |     const promise = getAnonName();
+      77 |     expect(promise).toBeInstanceOf(Promise);
+      78 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:75:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        5.508 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+
+2021-08-30 02:06:49 info: ---------------------------------------
+2021-08-30 02:06:49 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 02:06:49 info: ---------------------------------------
+2021-08-30 02:06:53 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    ✓ should exist and be executable (2 ms)
+    ✓ should call `new Promise()`
+    ✓ should take a single argument (1 ms)
+    ✓ : `resolve()` should be called with a one argument
+    ✓ : `reject()` should be called with a one argument
+    ✕ should resolve when called with a string argument (3 ms)
+    ✕ should reject with an Error object when called without an argument (2 ms)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      67 |     expect.assertions(2);
+      68 |     const promise = getAnonName('John');
+    > 69 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      70 |     return expect(promise).resolves.toEqual('John Doe');
+      71 |   });
+      72 | 
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:69:21)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      65 |   test('should resolve when called with a string argument', () => {
+      66 |     if (!exported) return;
+    > 67 |     expect.assertions(2);
+         |            ^
+      68 |     const promise = getAnonName('John');
+      69 |     expect(promise).toBeInstanceOf(Promise);
+      70 |     return expect(promise).resolves.toEqual('John Doe');
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:67:12)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      75 |     expect.assertions(2);
+      76 |     const promise = getAnonName();
+    > 77 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      78 |     return expect(promise).rejects.toBeInstanceOf(Error);
+      79 |   });
+      80 | });
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:77:21)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      73 |   test('should reject with an Error object when called without an argument', () => {
+      74 |     if (!exported) return;
+    > 75 |     expect.assertions(2);
+         |            ^
+      76 |     const promise = getAnonName();
+      77 |     expect(promise).toBeInstanceOf(Promise);
+      78 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:75:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        2.468 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+
+2021-08-30 02:09:08 info: ---------------------------------------
+2021-08-30 02:09:08 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 02:09:08 info: ---------------------------------------
+2021-08-30 02:09:18 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    ✓ should exist and be executable (3 ms)
+    ✓ should call `new Promise()`
+    ✓ should take a single argument (1 ms)
+    ✓ : `resolve()` should be called with a one argument
+    ✓ : `reject()` should be called with a one argument
+    ✕ should resolve when called with a string argument (3 ms)
+    ✕ should reject with an Error object when called without an argument (1 ms)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      67 |     expect.assertions(2);
+      68 |     const promise = getAnonName('John');
+    > 69 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      70 |     return expect(promise).resolves.toEqual('John Doe');
+      71 |   });
+      72 | 
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:69:21)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      65 |   test('should resolve when called with a string argument', () => {
+      66 |     if (!exported) return;
+    > 67 |     expect.assertions(2);
+         |            ^
+      68 |     const promise = getAnonName('John');
+      69 |     expect(promise).toBeInstanceOf(Promise);
+      70 |     return expect(promise).resolves.toEqual('John Doe');
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:67:12)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      75 |     expect.assertions(2);
+      76 |     const promise = getAnonName();
+    > 77 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      78 |     return expect(promise).rejects.toBeInstanceOf(Error);
+      79 |   });
+      80 | });
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:77:21)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      73 |   test('should reject with an Error object when called without an argument', () => {
+      74 |     if (!exported) return;
+    > 75 |     expect.assertions(2);
+         |            ^
+      76 |     const promise = getAnonName();
+      77 |     expect(promise).toBeInstanceOf(Promise);
+      78 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:75:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        5.25 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+
+2021-08-30 02:10:19 info: ---------------------------------------
+2021-08-30 02:10:19 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 02:10:19 info: ---------------------------------------
+2021-08-30 02:10:22 error: *** Unit Test Error Report ***
+
+  console.log
+    John Doe
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:20:31
+
+  console.log
+    John Doe
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:20:31
+
+  console.log
+    Error: You didn't pass in a first name!
+        at /Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/homework/ex1-johnWho.js:13:14
+        at new Promise (<anonymous>)
+        at getAnonName (/Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/homework/ex1-johnWho.js:11:21)
+        at Object.<anonymous> (/Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:76:21)
+        at Object.asyncJestTest (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+        at new Promise (<anonymous>)
+        at mapper (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:21:29
+
+
+2021-08-30 02:15:59 info: ---------------------------------------
+2021-08-30 02:15:59 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 02:15:59 info: ---------------------------------------
+2021-08-30 02:16:12 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    ✓ should exist and be executable (2 ms)
+    ✓ should call `new Promise()` (1 ms)
+    ✓ should take a single argument
+    ✓ : `resolve()` should be called with a one argument (1 ms)
+    ✓ : `reject()` should be called with a one argument
+    ✕ should resolve when called with a string argument (3 ms)
+    ✕ should reject with an Error object when called without an argument (4 ms)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      67 |     expect.assertions(2);
+      68 |     const promise = getAnonName('John');
+    > 69 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      70 |     return expect(promise).resolves.toEqual('John Doe');
+      71 |   });
+      72 | 
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:69:21)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      65 |   test('should resolve when called with a string argument', () => {
+      66 |     if (!exported) return;
+    > 67 |     expect.assertions(2);
+         |            ^
+      68 |     const promise = getAnonName('John');
+      69 |     expect(promise).toBeInstanceOf(Promise);
+      70 |     return expect(promise).resolves.toEqual('John Doe');
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:67:12)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      75 |     expect.assertions(2);
+      76 |     const promise = getAnonName();
+    > 77 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      78 |     return expect(promise).rejects.toBeInstanceOf(Error);
+      79 |   });
+      80 | });
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:77:21)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      73 |   test('should reject with an Error object when called without an argument', () => {
+      74 |     if (!exported) return;
+    > 75 |     expect.assertions(2);
+         |            ^
+      76 |     const promise = getAnonName();
+      77 |     expect(promise).toBeInstanceOf(Promise);
+      78 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:75:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        6.514 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+
+2021-08-30 02:17:33 info: ---------------------------------------
+2021-08-30 02:17:33 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 02:17:33 info: ---------------------------------------
+2021-08-30 02:17:43 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    ✓ should exist and be executable (2 ms)
+    ✓ should call `new Promise()`
+    ✓ should take a single argument (1 ms)
+    ✓ : `resolve()` should be called with a one argument
+    ✓ : `reject()` should be called with a one argument
+    ✕ should resolve when called with a string argument (3 ms)
+    ✕ should reject with an Error object when called without an argument (2 ms)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      67 |     expect.assertions(2);
+      68 |     const promise = getAnonName('John');
+    > 69 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      70 |     return expect(promise).resolves.toEqual('John Doe');
+      71 |   });
+      72 | 
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:69:21)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      65 |   test('should resolve when called with a string argument', () => {
+      66 |     if (!exported) return;
+    > 67 |     expect.assertions(2);
+         |            ^
+      68 |     const promise = getAnonName('John');
+      69 |     expect(promise).toBeInstanceOf(Promise);
+      70 |     return expect(promise).resolves.toEqual('John Doe');
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:67:12)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      75 |     expect.assertions(2);
+      76 |     const promise = getAnonName();
+    > 77 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      78 |     return expect(promise).rejects.toBeInstanceOf(Error);
+      79 |   });
+      80 | });
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:77:21)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      73 |   test('should reject with an Error object when called without an argument', () => {
+      74 |     if (!exported) return;
+    > 75 |     expect.assertions(2);
+         |            ^
+      76 |     const promise = getAnonName();
+      77 |     expect(promise).toBeInstanceOf(Promise);
+      78 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:75:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        6.301 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+
+2021-08-30 02:17:46 error: *** ESLint Report ***
+
+ex1-johnWho.js
+  16:5  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-08-30 02:22:08 info: ---------------------------------------
+2021-08-30 02:22:08 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 02:22:08 info: ---------------------------------------
+2021-08-30 02:22:20 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-johnWho.test.js --colors
+(node:8596) UnhandledPromiseRejectionWarning: Error: You didn't pass in a first name!
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:8596) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:8596) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js
+  getAnonName
+    ✓ should exist and be executable (2 ms)
+    ✓ should call `new Promise()`
+    ✓ should take a single argument (2 ms)
+    ✓ : `resolve()` should be called with a one argument (1 ms)
+    ✓ : `reject()` should be called with a one argument
+    ✕ should resolve when called with a string argument (3 ms)
+    ✕ should reject with an Error object when called without an argument (2 ms)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      67 |     expect.assertions(2);
+      68 |     const promise = getAnonName('John');
+    > 69 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      70 |     return expect(promise).resolves.toEqual('John Doe');
+      71 |   });
+      72 | 
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:69:21)
+
+  ● getAnonName › should resolve when called with a string argument
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      65 |   test('should resolve when called with a string argument', () => {
+      66 |     if (!exported) return;
+    > 67 |     expect.assertions(2);
+         |            ^
+      68 |     const promise = getAnonName('John');
+      69 |     expect(promise).toBeInstanceOf(Promise);
+      70 |     return expect(promise).resolves.toEqual('John Doe');
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:67:12)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect(received).toBeInstanceOf(expected)
+
+    Expected constructor: Promise
+
+    Received value has no prototype
+    Received value: undefined
+
+      75 |     expect.assertions(2);
+      76 |     const promise = getAnonName();
+    > 77 |     expect(promise).toBeInstanceOf(Promise);
+         |                     ^
+      78 |     return expect(promise).rejects.toBeInstanceOf(Error);
+      79 |   });
+      80 | });
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:77:21)
+
+  ● getAnonName › should reject with an Error object when called without an argument
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      73 |   test('should reject with an Error object when called without an argument', () => {
+      74 |     if (!exported) return;
+    > 75 |     expect.assertions(2);
+         |            ^
+      76 |     const promise = getAnonName();
+      77 |     expect(promise).toBeInstanceOf(Promise);
+      78 |     return expect(promise).rejects.toBeInstanceOf(Error);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:75:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:        7.11 s
+Ran all test suites matching /ex1-johnWho.test.js/i.
+
+2021-08-30 02:22:23 error: *** ESLint Report ***
+
+ex1-johnWho.js
+  16:5  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-08-30 02:26:24 info: ---------------------------------------
+2021-08-30 02:26:24 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 02:26:24 info: ---------------------------------------
+2021-08-30 02:26:37 error: *** Unit Test Error Report ***
+
+  console.log
+    John Doe
+
+  console.log
+    Error: You didn't pass in a first name!
+        at /Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/homework/ex1-johnWho.js:13:14
+        at new Promise (<anonymous>)
+        at getAnonName (/Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/homework/ex1-johnWho.js:11:21)
+        at Object.<anonymous> (/Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:76:21)
+        at Object.asyncJestTest (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+        at new Promise (<anonymous>)
+        at mapper (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+
+
+2021-08-30 03:43:57 info: ---------------------------------------
+2021-08-30 03:43:57 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 03:43:57 info: ---------------------------------------
+2021-08-30 03:44:07 error: *** Unit Test Error Report ***
+
+  console.log
+    John Doe
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:19:31
+
+  console.log
+    John Doe
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:19:31
+
+  console.log
+    Error: You didn't pass in a first name!
+        at /Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/homework/ex1-johnWho.js:13:14
+        at new Promise (<anonymous>)
+        at getAnonName (/Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/homework/ex1-johnWho.js:11:21)
+        at Object.<anonymous> (/Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:76:21)
+        at Object.asyncJestTest (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+        at new Promise (<anonymous>)
+        at mapper (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:20:29
+
+
+2021-08-30 03:45:29 info: ---------------------------------------
+2021-08-30 03:45:29 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 03:45:29 info: ---------------------------------------
+2021-08-30 03:45:31 error: *** Unit Test Error Report ***
+
+  console.log
+    John Doe
+
+  console.log
+    Error: You didn't pass in a first name!
+        at /Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/homework/ex1-johnWho.js:13:14
+        at new Promise (<anonymous>)
+        at getAnonName (/Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/homework/ex1-johnWho.js:11:21)
+        at Object.<anonymous> (/Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:76:21)
+        at Object.asyncJestTest (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+        at new Promise (<anonymous>)
+        at mapper (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+        at processTicksAndRejections (internal/process/task_queues.js:95:5)
+
+
+2021-08-30 03:46:32 info: ---------------------------------------
+2021-08-30 03:46:32 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 03:46:32 info: ---------------------------------------
+2021-08-30 03:46:35 error: *** Unit Test Error Report ***
+
+  console.log
+    John Doe
+
+  console.log
+    Error: You didn't pass in a first name!
+        at /Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/homework/ex1-johnWho.js:13:14
+        at new Promise (<anonymous>)
+        at getAnonName (/Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/homework/ex1-johnWho.js:11:21)
+        at Object.<anonymous> (/Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:76:21)
+        at Object.asyncJestTest (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+        at new Promise (<anonymous>)
+        at mapper (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+
+
+2021-08-30 03:47:09 info: ---------------------------------------
+2021-08-30 03:47:09 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 03:47:09 info: ---------------------------------------
+2021-08-30 03:47:12 error: *** Unit Test Error Report ***
+
+  console.log
+    John Doe
+
+  console.log
+    Error: You didn't pass in a first name!
+        at /Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/homework/ex1-johnWho.js:13:14
+        at new Promise (<anonymous>)
+        at getAnonName (/Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/homework/ex1-johnWho.js:11:21)
+        at Object.<anonymous> (/Users/hackyourfuture/Desktop/Homework-class33/3-UsingAPIs/Week1/unit-tests/ex1-johnWho.test.js:76:21)
+        at Object.asyncJestTest (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:106:37)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:45:12
+        at new Promise (<anonymous>)
+        at mapper (/Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:28:19)
+        at /Users/hackyourfuture/Desktop/Homework-class33/node_modules/jest-jasmine2/build/queueRunner.js:75:41
+
+
+2021-08-30 03:59:03 info: ---------------------------------------
+2021-08-30 03:59:03 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 03:59:03 info: ---------------------------------------
+2021-08-30 03:59:16 info: All unit tests passed.
+2021-08-30 03:59:20 info: All steps were completed successfully
+2021-08-30 04:01:11 info: ---------------------------------------
+2021-08-30 04:01:11 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 04:01:11 info: ---------------------------------------
+2021-08-30 04:01:16 error: *** Unit Test Error Report ***
+
+  console.log
+    John Doe
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:17:23
+
+  console.log
+    John Doe
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:17:23
+
+  console.log
+    undefined Doe
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:17:23
+
+
+2021-08-30 04:02:24 info: ---------------------------------------
+2021-08-30 04:02:24 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 04:02:24 info: ---------------------------------------
+2021-08-30 04:02:36 error: *** Unit Test Error Report ***
+
+  console.log
+    John Doe
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:17:23
+
+  console.log
+    John Doe
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:17:23
+
+  console.log
+    undefined Doe
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:17:23
+
+
+2021-08-30 04:03:45 info: ---------------------------------------
+2021-08-30 04:03:45 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 04:03:45 info: ---------------------------------------
+2021-08-30 04:03:57 error: *** Unit Test Error Report ***
+
+  console.log
+    John Doe
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:16:21
+
+  console.log
+    undefined Doe
+
+      at 3-UsingAPIs/Week1/homework/ex1-johnWho.js:16:21
+
+
+2021-08-30 04:08:02 info: ---------------------------------------
+2021-08-30 04:08:02 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-08-30 04:08:02 info: ---------------------------------------
+2021-08-30 04:08:14 info: All unit tests passed.
+2021-08-30 04:08:19 info: All steps were completed successfully
+2021-08-30 05:48:56 info: -------------------------------------------------
+2021-08-30 05:48:56 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2021-08-30 05:48:56 info: -------------------------------------------------
+2021-08-30 05:49:08 info: All unit tests passed.
+2021-08-30 05:49:13 info: All steps were completed successfully
+2021-08-30 08:11:19 info: ----------------------------------------
+2021-08-30 08:11:19 info: >>> Running Unit Test `ex3-rollDice` <<<
+2021-08-30 08:11:19 info: ----------------------------------------
+2021-08-30 08:11:31 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollDice.test.js --colors
+(node:10812) UnhandledPromiseRejectionWarning: ReferenceError: callback is not defined
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:10812) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 4)
+(node:10812) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex3-rollDice.test.js
+  rollDice
+    ✓ should call `new Promise()` (2 ms)
+    ✓ `resolve()` should be called with a one argument (1 ms)
+    ✓ `reject()` should be called with a one argument
+    ✕ should resolve when the dice settles successfully (4 ms)
+    ✓ should reject with an Error when the dice rolls off the table (1 ms)
+
+  ● rollDice › should resolve when the dice settles successfully
+
+    expect(received).resolves.toBeDefined()
+
+    Received promise rejected instead of resolved
+    Rejected to value: [ReferenceError: callback is not defined]
+
+      54 |     const promise = rollDice();
+      55 |     expect(promise).toBeInstanceOf(Promise);
+    > 56 |     const assertionPromise = expect(promise).resolves.toBeDefined();
+         |                              ^
+      57 | 
+      58 |     promise.finally(() => {
+      59 |       setTimeoutSpy.mockRestore();
+
+      at expect (node_modules/expect/build/index.js:134:15)
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex3-rollDice.test.js:56:30)
+
+  ● rollDice › should resolve when the dice settles successfully
+
+    expect.assertions(2)
+
+    Expected two assertions to be called but received one assertion call.
+
+      44 |   test('should resolve when the dice settles successfully', () => {
+      45 |     if (!exported) return;
+    > 46 |     expect.assertions(2);
+         |            ^
+      47 | 
+      48 |     const logSpy = jest.spyOn(console, 'log').mockImplementation();
+      49 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex3-rollDice.test.js:46:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 4 passed, 5 total
+Snapshots:   0 total
+Time:        7.031 s
+Ran all test suites matching /ex3-rollDice.test.js/i.
+
+2021-08-30 08:11:34 error: *** ESLint Report ***
+
+ex3-rollDice.js
+  13:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  18:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  24:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  30:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  36:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  42:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  63:9  error    'callback' is not defined  no-undef
+  82:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 8 problems (1 error, 7 warnings)
+
+
+2021-08-30 08:12:47 info: ----------------------------------------
+2021-08-30 08:12:47 info: >>> Running Unit Test `ex3-rollDice` <<<
+2021-08-30 08:12:47 info: ----------------------------------------
+2021-08-30 08:12:58 info: All unit tests passed.
+2021-08-30 08:13:00 error: *** ESLint Report ***
+
+ex3-rollDice.js
+  13:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  18:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  24:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  30:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  36:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  42:1  warning  Remove commented-out code  hyf/no-commented-out-code
+  81:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 7 problems (0 errors, 7 warnings)
+
+
+2021-08-31 02:56:43 info: ----------------------------------------
+2021-08-31 02:56:43 info: >>> Running Unit Test `ex3-rollDice` <<<
+2021-08-31 02:56:43 info: ----------------------------------------
+2021-08-31 02:56:54 info: All unit tests passed.
+2021-08-31 02:56:59 info: All steps were completed successfully
+2021-08-31 03:35:24 info: --------------------------------------------
+2021-08-31 03:35:24 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2021-08-31 03:35:24 info: --------------------------------------------
+2021-08-31 03:35:32 info: All unit tests passed.
+2021-08-31 03:35:36 info: All steps were completed successfully
+2021-08-31 04:35:56 info: ----------------------------------------------
+2021-08-31 04:35:56 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2021-08-31 04:35:56 info: ----------------------------------------------
+2021-08-31 04:36:03 info: All unit tests passed.
+2021-08-31 04:36:07 info: All steps were completed successfully
