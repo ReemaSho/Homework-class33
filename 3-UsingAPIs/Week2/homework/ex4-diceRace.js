@@ -12,17 +12,26 @@ const rollDice = require('../../helpers/pokerDiceRoller');
 
 function rollTheDices() {
   const dices = [1, 2, 3, 4, 5];
-  // TODO complete this function; use Promise.race() and rollDice()
+  const rolledDices = [];
+
+  dices.forEach((dice) => rolledDices.push(rollDice(dice)));
+  return Promise.race(rolledDices);
 }
 
 // Refactor this function to use async/await and try/catch
-function main() {
-  rollTheDices()
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
+async function main() {
+  try {
+    const results = await rollTheDices();
+    console.log('Resolved!', results);
+  } catch (error) {
+    console.log('Rejected!', error.message);
+  }
 }
 
 main();
+/* because we have in the <<pokerDiceRoller>> function a
+ setTimeout function which push the functions to the webAPI and then to the callback queue. So the functions 
+continue executing but their results are ignored.*/
 
 // ! Do not change or remove the code below
 module.exports = rollTheDices;
