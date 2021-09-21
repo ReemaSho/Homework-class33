@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  width: 110px;
+}
+select {
+  width: 30px;
+}
+button,
+select {
+  margin: 10px;
+}
+.expand-BTN {
+  width: 90px;
+}

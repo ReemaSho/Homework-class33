@@ -21,73 +21,77 @@ Try and avoid using global variables. As much as possible, try and use function
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
 
-async function fetchData(urlToFetch) {
+const fetchData = async (urlToFetch) => {
   const request = await fetch(urlToFetch);
   try {
     if (request.ok) {
       const jsonResponse = await request.json();
       return jsonResponse;
     }
-    throw new Error('Request Failed!');
+    throw new Error(request.status);
   } catch (error) {
     console.log(error.message);
   }
-}
+};
 
-async function fetchAndPopulatePokemons() {
-  const url = 'https://pokeapi.co/api/v2/pokemon/';
-  //fetch the data
-  const pokemonData = await fetchData(url);
-
-  // array of pokemons
-  const pokemons = pokemonData.results;
-
+const displayPokemonsNames = (pokemonsData) => {
   //get <select> tag
   const dropdownList = document.querySelector('select');
-
-  dropdownList.style.width = '90px';
+  dropdownList.classList.add('expand-BTN');
   //add <option> tags
-
-  for (const pokemon of pokemons) {
+  for (const pokemon of pokemonsData) {
     const pokemonName = pokemon.name;
     const pokemonNameEle = document.createElement('option');
     pokemonNameEle.setAttribute('value', pokemonName);
     pokemonNameEle.textContent = pokemonName;
     dropdownList.appendChild(pokemonNameEle);
   }
-
   const handleUserClick = (event) => {
-    for (const pokemon of pokemons) {
+    for (const pokemon of pokemonsData) {
       if (event.target.value === pokemon.name) {
         fetchImage(pokemon.url);
       }
     }
   };
-
   dropdownList.addEventListener('change', handleUserClick);
-}
+};
 
-async function fetchImage(pokemonData) {
-  const request = await fetch(pokemonData);
-  const divEle = document.querySelector('div');
-  divEle.textContent = '';
+const fetchAndPopulatePokemons = async () => {
+  const url = 'https://pokeapi.co/api/v2/pokemon/';
   try {
+    const request = await fetchData(url);
+    if (request) {
+      // object of pokemons
+      const pokemons = request.results;
+      displayPokemonsNames(pokemons);
+    } else throw new Error('Request Failed!');
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const fetchImage = async (pokemonData) => {
+  try {
+    const request = await fetch(pokemonData);
+    const imageContainer = document.querySelector('div');
+    imageContainer.textContent = '';
     if (request.ok) {
       const imgURL = await request.json();
-
+      console.log(imgURL);
       const imageElement = document.createElement('img');
-      const pokemonImage = imgURL['sprites']['front_default'];
+      const pokemonImage = imgURL.sprites.front_default;
+
       imageElement.src = pokemonImage;
-      divEle.appendChild(imageElement);
+      imageContainer.appendChild(imageElement);
       return;
     }
-    throw new Error('Something went wrong!');
+    throw new Error(`Request Failed! ${request.status}`);
   } catch (error) {
     console.log(error.message);
   }
-}
+};
 
-async function main() {
+const main = () => {
   //create the button
   const getPokemonBtn = document.createElement('button');
   getPokemonBtn.setAttribute('type', 'submit');
@@ -96,11 +100,10 @@ async function main() {
   //create the dropdown menu
   const dropdownList = document.createElement('select');
   //create the image container
-  const divEle = document.createElement('div');
+  const imageContainer = document.createElement('div');
 
   // add the elements to the DOM
-
-  document.body.prepend(getPokemonBtn, dropdownList, divEle);
-}
+  document.body.prepend(getPokemonBtn, dropdownList, imageContainer);
+};
 
 window.addEventListener('load', main);
