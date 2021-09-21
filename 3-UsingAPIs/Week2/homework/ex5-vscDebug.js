@@ -18,7 +18,7 @@ function renderLaureate({ knownName, birth, death }) {
 }
 
 function renderLaureates(data) {
-  const laureates = data.laureates;
+  const { laureates } = data;
 
   laureates.forEach(renderLaureate);
 }
@@ -30,7 +30,7 @@ async function fetchAndRender() {
     );
     renderLaureates(laureates);
   } catch (err) {
-    console.error(`Something went wrong: ${err.message}`);
+    console.error(`Request Failed : ${err.message}`);
   }
 }
 fetchAndRender();
